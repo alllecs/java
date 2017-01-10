@@ -15,8 +15,9 @@ public class InRand {
 		do {
 			// Читаем с потока ввода целое число
 			user = input.nextInt();
+			i++;
 			if(user == prog) {
-				System.out.println("Вы угадали!");
+				System.out.println("Вы угадали c " + i + " раза");
 			} else {
 				// Проверяем, входит ли число в отрезок [1;10]
 				if (user > 0 && user <= 10) {
